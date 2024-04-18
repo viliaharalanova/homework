@@ -8,17 +8,39 @@ bmi =round(bmi, 2)
 print(f'BMI={bmi}')
 if bmi < 16:
     print('Underweight (Severe thinness)')
-elif 16 < bmi < 16.9:
+elif bmi < 17:
     print('Underweight (Moderate thinness)')
-elif 17 < bmi < 18.4:
+elif bmi < 18.5:
     print('Underweight (Mild thinness)')
-elif 18.5 < bmi < 24.9:
+elif bmi < 25:
     print('Normal range')
-elif 25 < bmi < 29.9:
+elif bmi < 30:
     print('Overweight (Pre-obese)')
-elif 30 < bmi < 34.9:
+elif bmi < 35:
     print('Obese (Class I)')
-elif 35 < bmi < 39.9:
-    print('Overweight (Pre-obese)')
+elif bmi < 40:
+    print('Overweight (Class II)')
 else:
-    print('Overweight (Pre-obese)')
+    print('Overweight (Class III)')
+
+
+
+
+
+
+# levels = [
+#     (16, 'Underweight (Severe thinness)'),
+#     (17, 'Underweight 2 (Moderate thinness)'),
+#     (18.5, 'Underweight 3 (Mild thinness)'),
+#     (25, 'Normal range')
+#     (30, 'Overweight (Pre-obese)')
+#     (35, 'Obese (Class I)')
+#     (40, 'Overweight (Class II)')
+#     (99999, 'Overweight (Class III)')
+# ]
+
+# for level in levels:
+#     min_score, level_name = level
+#     if bmi < min_score:
+#         print(level_name)
+#         break
